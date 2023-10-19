@@ -18,6 +18,17 @@ local plugins = {
     --     lazy = false,
     -- },
     {
+        'ThePrimeagen/harpoon',
+        config = function ()
+            require("harpoon").setup()
+        end,
+        keys = {
+            {"<leader>m", mode = {"n"}, function() require("harpoon.mark").add_file() end, desc = "Add a file to harpoon"},
+            {"<leader>uh", mode = {"n"}, function() require("harpoon.ui").toggle_quick_menu() end, desc = "Add a file to harpoon"},
+        }
+
+    },
+    {
         "christoomey/vim-tmux-navigator",
         lazy = false
     },
@@ -80,8 +91,8 @@ local plugins = {
             require("custom.configs.fterm")
         end,
         keys = {
-            {"<leader>gu", mode = {"n"}, function () vim.cmd("GituiToggle") end, desc = "Toggle github ui"},
-            {"<leader>sm", mode = {"n"}, function() vim.cmd("BtopToggle") end, desc = "Toggle htop ui"},
+            {"<leader>ug", mode = {"n"}, function () vim.cmd("GituiToggle") end, desc = "Toggle github ui"},
+            {"<leader>up", mode = {"n"}, function() vim.cmd("BtopToggle") end, desc = "Toggle process monitor"},
         }
     },
     {
@@ -168,14 +179,14 @@ local plugins = {
             require("symbols-outline").setup()
         end,
         keys = {
-            {"<leader>sc", mode = {"n"}, function() vim.cmd("SymbolsOutline") end, desc = "Open symbols outline"},
+            {"<leader>us", mode = {"n"}, function() vim.cmd("SymbolsOutline") end, desc = "Open symbols outline"},
         }
 
     },
     {
         "preservim/tagbar",
         keys = {
-            {"<leader>ss", mode = {"n"}, function() vim.cmd("Tagbar") end, desc = "Open Tagbar"},
+            {"<leader>ut", mode = {"n"}, function() vim.cmd("Tagbar") end, desc = "Open Tagbar"},
         }
 
     },
@@ -235,7 +246,7 @@ local plugins = {
             -- "kristijanhusak/vim-dadbod-completion",
         },
         keys = {
-            {"<leader>do", mode = {"n"}, function() vim.cmd("DBUI") end, desc = "Open database ui"},
+            {"<leader>ud", mode = {"n"}, function() vim.cmd("DBUI") end, desc = "Open database ui"},
         },
     },
     {
