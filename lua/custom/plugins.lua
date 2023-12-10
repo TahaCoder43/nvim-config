@@ -24,7 +24,7 @@ local plugins = {
         end,
         keys = {
             {"<leader>m", mode = {"n"}, function() require("harpoon.mark").add_file() end, desc = "Add a file to harpoon"},
-            {"<leader>uh", mode = {"n"}, function() require("harpoon.ui").toggle_quick_menu() end, desc = "Add a file to harpoon"},
+            {"<leader>uh", mode = {"n"}, function() require("harpoon.ui").toggle_quick_menu() end, "Add a file to harpoon"},
         }
 
     },
@@ -92,7 +92,7 @@ local plugins = {
         end,
         keys = {
             {"<leader>ug", mode = {"n"}, function () vim.cmd("GituiToggle") end, desc = "Toggle github ui"},
-            {"<leader>up", mode = {"n"}, function() vim.cmd("BtopToggle") end, desc = "Toggle process monitor"},
+            {"<leader>um", mode = {"n"}, function() vim.cmd("BtopToggle") end, desc = "Toggle process monitor"},
         }
     },
     {
@@ -106,8 +106,8 @@ local plugins = {
             position = "right",
         },
         keys = {
-            {"<leader>pw", mode = {"n"}, function() vim.cmd("TroubleToggle workspace_diagnostics") end, desc = "Toggle view errors in workspace"},
-            {"<leader>pf", mode = {"n"}, function() vim.cmd("TroubleToggle document_diagnostics") end, desc = "Toggle view errors in document"},
+            {"<leader>uw", mode = {"n"}, function() vim.cmd("TroubleToggle workspace_diagnostics") end, desc = "Toggle view errors in workspace"},
+            {"<leader>up", mode = {"n"}, function() vim.cmd("TroubleToggle document_diagnostics") end, desc = "Toggle view errors in document"},
         },
     },
     {
