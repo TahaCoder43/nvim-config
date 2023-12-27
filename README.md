@@ -13,6 +13,6 @@ My Neovim configuration
 
 1. save your prevoius configuration by `cp ~/.config/nvim ~/nvim_backup` (if you have one)
 2. now run `rm -rf ~/.config/nvim` and `rm -rf ~/.local/share/nvim/`
-3. run `mkdir ~/.local/nvim` and `git clone https://github.com/TahaCoder43/nvim-config ~/.local/nvim`
+3. run `mkdir ~/.config/nvim` and `git clone https://github.com/TahaCoder43/nvim-config ~/.config/nvim`
 4. now run nvim and it will start installing stuff, wait for it to install
 5. now go in nvim press `:` and type `MasonInstallAll` that should open up a window installing all the language servers
