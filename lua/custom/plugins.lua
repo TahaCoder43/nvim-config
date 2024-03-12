@@ -17,6 +17,11 @@ local plugins = {
     --     end,
     --     lazy = false,
     -- },
+    
+    {
+        'Exafunction/codeium.vim',
+        event = 'BufEnter'
+    },
     {
         'ThePrimeagen/harpoon',
         config = function ()
