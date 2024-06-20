@@ -12,6 +12,18 @@ local M = {
         typescriptreact = {
             require("formatter.filetypes.typescriptreact").prettier
         },
+        html = {
+            require("formatter.filetypes.html").prettier
+        },
+        css = {
+            require("formatter.filetypes.css").prettier
+        },
+        svelte = {
+            require("formatter.filetypes.svelte").prettier
+        },
+        python = {
+            require("formatter.filetypes.python").black
+        },
         -- go = {
         --     require("formatter.filetypes.go").gofmt
         -- },
