@@ -17,11 +17,10 @@ local plugins = {
     --     end,
     --     lazy = false,
     -- },
-    
-    {
-        'Exafunction/codeium.vim',
-        event = 'BufEnter'
-    },
+    -- {
+    --     "Exafunction/codeium.vim",
+    --     event="BufEnter",
+    -- },
     {
         "mattn/emmet-vim",
         config = function ()
