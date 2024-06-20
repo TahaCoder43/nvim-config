@@ -24,6 +24,12 @@ M.abc = {
             end,
             "Toggle horizontal term"
         },
+        ["<A-n>"] = {
+            function()
+                require("nvterm.terminal").toggle "vertical"
+            end,
+            "Toggle Vertical term"
+        },
         ["<A-h>"] = {"<cmd> TmuxNavigateLeft<CR>", "move to the left pane"},
         ["<A-j>"] = {"<cmd> TmuxNavigateDown<CR>", "move to the down pane"},
         ["<A-k>"] = {"<cmd> TmuxNavigateUp<CR>", "move to the left pane"},
@@ -35,6 +41,9 @@ M.abc = {
         ["<leader>gn"] = {"<cmd> Gitsigns next_hunk <CR>", "Jump to next git hunk"},
         ["<leader>go"] = {"<cmd> Gitsigns preview_hunk <CR>", "Show git hunks inline"},
         ["<leader>gi"] = {"<cmd> Gitsigns preview_hunk_inline <CR>", "Show git hunks inline"},
+        ["<leader>gs"] = {"<cmd> Gitsigns stage_hunk <CR>", "Stage hunk on cursor"},
+        ["<leader>gu"] = {"<cmd> Gitsigns undo_stage_hunk <CR>", "Remove hunk from stage on cursor"},
+        ["<leader>gr"] = {"<cmd> Gitsigns stage_hunk <CR>", "Reset hunk"},
     },
     v = {
         ["gr"] = {"<cmd>Telescope lsp_references<CR>", "show references"},
@@ -58,6 +67,12 @@ M.abc = {
                 require("nvterm.terminal").toggle "horizontal"
             end,
             "Toggle horizontal term"
+        },
+        ["<A-n>"] = {
+            function()
+                require("nvterm.terminal").toggle "vertical"
+            end,
+            "Toggle Vertical term"
         },
         ["<A-h>"] = {"<cmd> TmuxNavigateLeft<CR>", "move to the left pane"},
         ["<A-j>"] = {"<cmd> TmuxNavigateDown<CR>", "move to the down pane"},
