@@ -23,6 +23,13 @@ local plugins = {
         event = 'BufEnter'
     },
     {
+        "mattn/emmet-vim",
+        config = function ()
+            require("emmet-vim").setup()
+        end,
+        ft = {"js", "jsx" ,"ts", "tsx", "html", "svelte"}
+    },
+    {
         'ThePrimeagen/harpoon',
         config = function ()
             require("harpoon").setup()
