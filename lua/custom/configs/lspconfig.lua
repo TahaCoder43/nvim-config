@@ -61,7 +61,7 @@ lspconfig.cssls.setup {
     capabilities = capabilities,
     cmd = {"vscode-css-language-server", "--stdio"},
     filetypes = {"css", "scss", "less"},
-    root_dir = util.root_pattern("package.json", ".git"),
+    root_dir = util.root_pattern("package.json", ".git", "index.html"),
     settings = {
         css = {
             validate = true
@@ -81,7 +81,7 @@ lspconfig.cssmodules_ls.setup {
     capabilities = capabilities,
     cmd = {"cssmodules-language-server"},
     filetypes = {"javascript", "typescript", "javascriptreact", "typescriptreact"},
-    root_dir = util.root_pattern("package.json", ".git")
+    root_dir = util.root_pattern("package.json", ".git", "index.html")
 
 }
 
@@ -93,7 +93,7 @@ lspconfig.custom_elements_ls.setup{
     init_options = {
         hostInfo = "neovim"
     },
-    root_dir = util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git"),
+    root_dir = util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git", "index.html"),
 }
 
 require("ufo").setup()
