@@ -97,3 +97,16 @@ lspconfig.custom_elements_ls.setup{
 }
 
 require("ufo").setup()
+lspconfig.svelte.setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = {"svelteserver", "--stdio"},
+    filetypes = {"svelte"},
+    root_pattern = {"package.json", ".git"}
+}
+
+lspconfig.pyright.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    filetypes = {"python"},
+}
