@@ -1,5 +1,5 @@
 local options = {
-  ensure_installed = { "lua", "rust", "python", "javascript", "typescript", "tsx", "rust", "go", "sql", "html", "bash", "csv", "yaml", "svelte" },
+  ensure_installed = { "lua", "rust", "python", "javascript", "typescript", "tsx", "rust", "go", "sql", "html", "bash", "csv", "yaml", "svelte", "markdown" },
 
   highlight = {
     enable = true,
