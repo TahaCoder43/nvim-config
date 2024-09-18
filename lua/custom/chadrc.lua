@@ -2,8 +2,8 @@
 local M = {}
 
 M.ui = {
-    theme="tokyodark",
-    theme_toggle = {"tokyodark", "one_light"},
+    theme="tokyonight",
+    theme_toggle = {"tokyonight", "one_light"},
     statusline = {
         theme="default",
     },

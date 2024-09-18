@@ -271,7 +271,11 @@ local plugins = {
                 "gopls",
                 "css-lsp",
                 "cssmodules-language-server",
-                "custom-elements-languageserver "
+                "custom-elements-languageserver",
+                "svelte-language-server",
+                "pyright",
+                "ruff",
+                "mypy",
             }
         }
     },

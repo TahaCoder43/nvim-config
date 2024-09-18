@@ -96,7 +96,6 @@ lspconfig.custom_elements_ls.setup{
     root_dir = util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git", "index.html"),
 }
 
-require("ufo").setup()
 lspconfig.svelte.setup{
     on_attach = on_attach,
     capabilities = capabilities,
@@ -110,3 +109,5 @@ lspconfig.pyright.setup {
     capabilities = capabilities,
     filetypes = {"python"},
 }
+
+require("ufo").setup()

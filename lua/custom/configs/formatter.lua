@@ -22,7 +22,7 @@ local M = {
             require("formatter.filetypes.svelte").prettier
         },
         python = {
-            require("formatter.filetypes.python").black
+            require("formatter.filetypes.python").ruff
         },
         -- go = {
         --     require("formatter.filetypes.go").gofmt
