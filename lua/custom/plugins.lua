@@ -264,6 +264,7 @@ local plugins = {
         "williamboman/mason.nvim",
         opts = {
             ensure_installed = {
+                "astro-language-server",
                 "lua-language-server",
                 "rust-analyzer",
                 "typescript-language-server",
@@ -285,6 +286,13 @@ local plugins = {
         opts = function()
             return require "custom.configs.formatter"
         end
+    },
+    {
+      'stevearc/conform.nvim',
+       opts = {},
+       config = function()
+            return require("conform").setup(require("custom.configs.conform"))
+       end,
     },
     {
         "neovim/nvim-lspconfig",

@@ -110,4 +110,9 @@ lspconfig.pyright.setup {
     filetypes = {"python"},
 }
 
+lspconfig.astro.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+}
+
 require("ufo").setup()
