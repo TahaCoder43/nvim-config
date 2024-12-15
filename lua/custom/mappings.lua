@@ -12,11 +12,14 @@ M.abc = {
         ["<leader>,"] = {"/,$\n:nohlsearch<CR>", "Go to next coma at end of line"},
         ["gr"] = {"viw<cmd>Telescope lsp_references<CR>", "show references"},
         ["<leader>fa"] = {"<cmd>Telescope live_grep<CR>", "find all"},
+        ["<leader>fh"] = {"<cmd>Telescope current_buffer_fuzzy_find <CR>", "find here (in this buffer)"},
+        ["<leader>f?"] = {"<cmd>Telescope help_tags <CR>", "find help"},
         ["wa"] = {"<cmd>tabnew<CR>", "Add a workspace"},
         ["wn"] = {"<cmd>tabnext<CR>", "Next workspace"},
         ["wp"] = {"<cmd>tabprevious<CR>", "Previous workspace"},
         ["z{"] = {"/{$\n:nohlsearch<CR>zfa{", "search {} folds"},
         ["zn"] = {"n<ESC>zfa{", "make next fold"},
+        -- ["<leader>rc"] = {"yaw<cmd>s/<C-V>/"},
         ["<C-l>"] = {"0^", "Go to first non-space character on line"},
         ["<A-b>"] = {
             function()

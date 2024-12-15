@@ -5,7 +5,7 @@ M.ui = {
     theme="tokyonight",
     theme_toggle = {"tokyonight", "one_light"},
     statusline = {
-        theme="default",
+        theme="vscode_colored",
     },
 }
 M.plugins = "custom.plugins"

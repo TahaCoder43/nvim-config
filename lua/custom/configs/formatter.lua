@@ -27,7 +27,7 @@ local M = {
         -- does not work cause astro filetype is not supported
         -- astro = {
         --     require("formatter.filetypes.astro").prettier
-        -- }, 
+        -- },
         -- go = {
         --     require("formatter.filetypes.go").gofmt
         -- },

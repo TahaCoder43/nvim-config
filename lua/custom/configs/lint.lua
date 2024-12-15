@@ -5,7 +5,7 @@ require("lint").linters_by_ft = {
     javascriptreact = {"eslint"},
     typescriptreact = {"eslint"},
     python = {"ruff"},
-    astro = {"biomejs"},
+    -- astro = {"biomejs"},
     -- python = {"ruff", "mypy"},
 }
 

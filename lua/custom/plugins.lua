@@ -21,6 +21,27 @@ local plugins = {
     --     "Exafunction/codeium.vim",
     --     event="BufEnter",
     -- },
+    -- {
+    --     "vimlab/mdn.vim",
+    --     lazy = false,
+    --     dependencies = {
+    --         "neovim/node-host",
+    --     },
+    -- },
+    {
+        "habamax/vim-godot",
+        ft = {"gd"}
+    },
+    {
+        "davidmh/mdx.nvim",
+        config = true,
+        dependencies = {"nvim-treesitter/nvim-treesitter"},
+        ft = {"mdx"},
+    },
+    -- {
+    --     "findango/vim-mdx.git",
+    --     lazy = false,
+    -- },
     {
         "mattn/emmet-vim",
         config = function ()
@@ -117,14 +138,13 @@ local plugins = {
             position = "right",
         },
         keys = {
-            {"<leader>uw", mode = {"n"}, function() vim.cmd("TroubleToggle workspace_diagnostics") end, desc = "Toggle view errors in workspace"},
-            {"<leader>up", mode = {"n"}, function() vim.cmd("TroubleToggle document_diagnostics") end, desc = "Toggle view errors in document"},
+            {"<leader>ue", mode = {"n"}, function() vim.cmd("Trouble diagnostics") end, desc = "Toggle view errors in workspace"},
         },
     },
     {
         'piersolenski/telescope-import.nvim',
         dependencies = {
-            'nvim-telescope/telescope.nvim'
+            'nvim-telescope/telescope.nvim',
         },
         config = function()
             require("telescope").load_extension("import")
@@ -277,6 +297,7 @@ local plugins = {
                 "pyright",
                 "ruff",
                 "mypy",
+                "mdx-analyzer",
             }
         }
     },
@@ -288,11 +309,12 @@ local plugins = {
         end
     },
     {
-      'stevearc/conform.nvim',
-       opts = {},
-       config = function()
+        'stevearc/conform.nvim',
+         opts = {},
+         config = function()
             return require("conform").setup(require("custom.configs.conform"))
-       end,
+         end,
+        ft = {"lua", "astro", "html", "css"},
     },
     {
         "neovim/nvim-lspconfig",

@@ -7,7 +7,6 @@ local M = {
         astro = { "prettier" },
         html = {"prettier"},
         css = {"prettier"},
-        svelte = {"prettier"},
     },
 }
 

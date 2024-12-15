@@ -76,25 +76,25 @@ lspconfig.cssls.setup {
     single_file_support = true
 }
 
-lspconfig.cssmodules_ls.setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    cmd = {"cssmodules-language-server"},
-    filetypes = {"javascript", "typescript", "javascriptreact", "typescriptreact"},
-    root_dir = util.root_pattern("package.json", ".git", "index.html")
+-- lspconfig.cssmodules_ls.setup {
+--     on_attach = on_attach,
+--     capabilities = capabilities,
+--     cmd = {"cssmodules-language-server"},
+--     filetypes = {"javascript", "typescript", "javascriptreact", "typescriptreact"},
+--     root_dir = util.root_pattern("package.json", ".git", "index.html")
+--
+-- }
 
-}
-
-lspconfig.custom_elements_ls.setup{
-    on_attach = on_attach,
-    capabilities = capabilities,
-    cmd = { "custom-elements-languageserver", "--stdio" },
-    filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "html" },
-    init_options = {
-        hostInfo = "neovim"
-    },
-    root_dir = util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git", "index.html"),
-}
+-- lspconfig.custom_elements_ls.setup{
+--     on_attach = on_attach,
+--     capabilities = capabilities,
+--     cmd = { "custom-elements-languageserver", "--stdio" },
+--     filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "html" },
+--     init_options = {
+--         hostInfo = "neovim"
+--     },
+--     root_dir = util.root_pattern("package.json", "tsconfig.json", "jsconfig.json", ".git", "index.html"),
+-- }
 
 lspconfig.svelte.setup{
     on_attach = on_attach,
@@ -114,5 +114,10 @@ lspconfig.astro.setup {
     on_attach = on_attach,
     capabilities = capabilities,
 }
+
+-- lspconfig.mdx_analyzer.setup {
+--     on_attach = on_attach,
+--     capabilities = capabilities,
+-- }
 
 require("ufo").setup()
