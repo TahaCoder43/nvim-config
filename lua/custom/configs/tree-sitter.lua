@@ -9,6 +9,7 @@ local options = {
         "javascript",
         "lua",
         "markdown",
+        "nix",
         "python",
         "rust",
         "scss",
